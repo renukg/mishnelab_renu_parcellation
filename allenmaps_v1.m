@@ -26,18 +26,6 @@ if dataID == 4
     resultDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_AllenMaps_v1';
 end
 
-% Directory containing the files
-%dataDir = 'D:\UCSD_Acads\ProfGal_Research\data32\fMRIData\REST';
-%dataDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_new';
-%dataDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_new';
-dataDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_new';
-
-% Results directory
-%resultDir = 'D:\UCSD_Acads\ProfGal_Research\test_run_AllenMaps_v1';
-%resultDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_AllenMaps_v1';
-%resultDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_AllenMaps_v1';
-resultDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_AllenMaps_v1';
-
 AllenfilePath = fullfile(mapDir, '2D_calcium_atlas.nii');
 
 allen_map = niftiread(AllenfilePath);
