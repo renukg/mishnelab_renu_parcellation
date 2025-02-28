@@ -7,6 +7,25 @@ close all;
 % Maps directory
 mapDir = 'D:\UCSD_Acads\ProfGal_Research\Allen maps';
 
+dataID = 1;
+
+if dataID == 1
+    dataDir = 'D:\UCSD_Acads\ProfGal_Research\data32\fMRIData\REST';
+    resultDir = 'D:\UCSD_Acads\ProfGal_Research\test_run_AllenMaps_v1';
+end
+if dataID == 2
+    dataDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_new';
+    resultDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_AllenMaps_v1';
+end
+if dataID == 3
+    dataDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_new';
+    resultDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_AllenMaps_v1';
+end
+if dataID == 4
+    dataDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_new';
+    resultDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_AllenMaps_v1';
+end
+
 % Directory containing the files
 %dataDir = 'D:\UCSD_Acads\ProfGal_Research\data32\fMRIData\REST';
 %dataDir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_new';
