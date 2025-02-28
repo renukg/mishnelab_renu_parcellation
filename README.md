@@ -2,17 +2,22 @@
 
 <table border="1">
   <tr>
-    <th>Column 1</th>
-    <th>Column 2</th>
-    <th>Column 3</th>
+    <th>Parcellation Technique</th>
+    <th>Code file</th>
+    <th>Instructions</th>
   </tr>
   <tr>
-    <td>Value 1</td>
+    <td>LSSC</td>
     <td>Value 2</td>
     <td>Value 3</td>
   </tr>
   <tr>
-    <td>Value 4</td>
+    <td>Kmeans</td>
+    <td>Value 5</td>
+    <td>Value 6</td>
+  </tr>
+  <tr>
+    <td>Allen</td>
     <td>Value 5</td>
     <td>Value 6</td>
   </tr>
