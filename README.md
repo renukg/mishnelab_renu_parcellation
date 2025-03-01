@@ -51,8 +51,8 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
 </table>
 
 ## To perform dice, within/across correlation comparison study across LSCC, Kmeans, and Allen (anatomical):
-Code file: compare_LSSC_kNN_2.m
-###Instructions:
+Code file: compare_LSSC_kNN_2.m <br>
+Instructions:
 <ul>
   <li>Update the directories. </li>
   <li>Images will be saved in the "saveimagesPath". </li>
