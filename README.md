@@ -9,11 +9,12 @@
   <tr>
     <td>LSSC</td>
     <td>run_LSSC_fmri_sessions_hemisphere.m</td>
-    <td> Update the directories <br>
-      dataID = 1/2/3/4 - for 4 data sets <br>
+    <td> Update the directories. <br>
+      dataID = 1/2/3/4 - for 4 data sets. <br>
       RUN_LSSC = 0/1 - to run and generate parcellation images, mat files.<br>
       RUN_DICE_SIMILARITY = 0/1 - Dice computation subject-wise. Run only after LSSC.<br>
-      RUN_TEMPORAL_CORR = 0/1 - Within and across temporal correlations subject-wise. Run only after LSSC.
+      RUN_TEMPORAL_CORR = 0/1 - Within and across temporal correlations subject-wise. Run only after LSSC.<br>
+      Look for "cfg" structure and "runROI_meso_nlm_new_v2.m" file to modify LSSC parameters.
     </td>
   </tr>
   <tr>
