@@ -33,8 +33,6 @@ for dataID = 1:4
         dataString = 'noGSR_thickermask';
     end
     
-    res_DIR = 'D:\UCSD_Acads\ProfGal_Research\test_run_KNN25_hemisphere_replicas100\run_knn_sessions';
-    
     if LSSC
         file_1 = fullfile(lssc_result_dir, 'run_fmri_sessions\sub_SLC09_ses_1_hemisp_1_lssc_out.mat');
         file_2 = fullfile(lssc_result_dir, 'run_fmri_sessions\sub_SLC09_ses_2_hemisp_1_lssc_out.mat');
