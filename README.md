@@ -1,6 +1,39 @@
 # Validation of LSSC parcellation algorithm for fMRI data
 
 Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W9Na8W1Nj48?usp=drive_link
+<table border="1">
+  <tr>
+    <th>dataID</th>
+    <th>data</th>
+    <th>raw data path</th>
+    <th>results path</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Old</td>
+    <td>lssc-frmi-eve\raw data\fMRIData\REST</td>
+    <td>lssc-frmi-eve\raw data\fMRIData\Results\REST_results</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Old</td>
+    <td>lssc-frmi-eve\raw data\fMRIData\GSR_1voxelmask_new</td>
+    <td>lssc-frmi-eve\raw data\fMRIData\Results\GSR_1voxelmask_results</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Old</td>
+    <td>lssc-frmi-eve\raw data\fMRIData\GSR_thickermask_new</td>
+    <td>lssc-frmi-eve\raw data\fMRIData\Results\GSR_thickermask_results</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Old</td>
+    <td>lssc-frmi-eve\raw data\fMRIData\noGSR_thickermask_new</td>
+    <td>lssc-frmi-eve\raw data\fMRIData\Results\noGSR_thickermask_results</td>
+  </tr>
+</table>
+
 ## Please follow the instructions below to run parcellation on the FMRI data:
 <table border="1">
   <tr>
