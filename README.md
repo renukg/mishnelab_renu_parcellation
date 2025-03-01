@@ -51,11 +51,23 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
 </table>
 
 ## To perform dice, within/across correlation comparison study across LSCC, Kmeans, and Allen (anatomical):
-Code file: compare_LSSC_kNN_2.m <br>
-Instructions:
+**Code file:** compare_LSSC_kNN_2.m <br>
+**Instructions:**
 <ul>
   <li>Update the directories. </li>
-  <li>Images will be saved in the "saveimagesPath". </li>
+  <li>Images will be saved in " saveimagesPath = '\.....\images_final_allData' ". </li>
   <li>dataID = 1/2/3/4 - for 4 data sets. </li>
-  <li>Three images will be generated for each data set - Dice comparison, Withn correlation comparison, Across correlation comparison</li>
+  <li>Three images will be generated for each data set - Dice comparison, Within correlation comparison, Across correlation comparison</li>
+</ul>
+
+## To plot parcel boundaries for comparing between sessions:
+**Code file:** run_parcel_boundary_generate.m <br>
+**Instructions:**
+<ul>
+  <li>Update the directories. </li>
+  <li>Set either of variables LSSC or KMEANS to 1. Do not set both equal to 1. We have to run the code separately for LSSC and Kmeans. </li>
+  <li>Images will be saved in " saveimagesPath = '\.....\images_final_allData' ". </li>
+  <li>dataID = 1/2/3/4 - for 4 data sets. </li>
+  <li>Code will run for specific subject-session-hemisphere. Modify the variables 'file_1', and 'file_2' to try for different subjects.</li>
+  <li>Currenlty its hardcoded to Subject-9, as it has the best Dice.</li>
 </ul>
