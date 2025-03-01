@@ -1,5 +1,7 @@
 # Validation of LSSC parcellation algorithm for fMRI data
 
+Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W9Na8W1Nj48?usp=drive_link
+## Please follow the instructions below to run parcellation on the FMRI data:
 <table border="1">
   <tr>
     <th>Parcellation Technique</th>
@@ -47,3 +49,13 @@
     </td>
   </tr>
 </table>
+
+## To perform dice, within/across correlation comparison study across LSCC, Kmeans, and Allen (anatomical):
+Code file: compare_LSSC_kNN_2.m
+Instructions:
+<ul>
+  <li>Update the directories. </li>
+  <li>Images will be saved in the "saveimagesPath". </li>
+  <li>dataID = 1/2/3/4 - for 4 data sets. </li>
+  <li>Three images will be generated for each data set - Dice comparison, Withn correlation comparison, Across correlation comparison</li>
+</ul>
