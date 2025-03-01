@@ -16,19 +16,19 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
   </tr>
   <tr>
     <td>1</td>
-    <td>Old</td>
+    <td>GSR_1voxelmask</td>
     <td>lssc-frmi-eve\raw data\fMRIData\GSR_1voxelmask_new</td>
     <td>lssc-frmi-eve\raw data\fMRIData\Results\GSR_1voxelmask_results</td>
   </tr>
   <tr>
     <td>1</td>
-    <td>Old</td>
+    <td>GSR_thickermask</td>
     <td>lssc-frmi-eve\raw data\fMRIData\GSR_thickermask_new</td>
     <td>lssc-frmi-eve\raw data\fMRIData\Results\GSR_thickermask_results</td>
   </tr>
   <tr>
     <td>1</td>
-    <td>Old</td>
+    <td>noGSR_thickermask</td>
     <td>lssc-frmi-eve\raw data\fMRIData\noGSR_thickermask_new</td>
     <td>lssc-frmi-eve\raw data\fMRIData\Results\noGSR_thickermask_results</td>
   </tr>
