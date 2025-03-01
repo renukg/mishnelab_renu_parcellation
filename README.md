@@ -69,5 +69,5 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
   <li>Images will be saved in " saveimagesPath = '\.....\images_final_allData' ". </li>
   <li>dataID = 1/2/3/4 - for 4 data sets. </li>
   <li>Code will run for specific subject-session-hemisphere. Modify the variables 'file_1', and 'file_2' to try for different subjects.</li>
-  <li>Currenlty its hardcoded to Subject-9, as it has the best Dice.</li>
+  <li>Currently it is for Subject-9, as it has the best Dice.</li>
 </ul>
