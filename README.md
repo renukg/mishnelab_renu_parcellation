@@ -106,6 +106,8 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
   <li>Update the directories. </li>
   <li>Images will be saved in " saveimagesPath = '\.....\images_final_allData' ". </li>
   <li>dataID = 1/2/3/4 - for 4 data sets. </li>
+  <li>Set HEMISP_RUN_SEPARATELY=1 for hemispheres run separately. Set HEMISP_RUN_CONCATENATE=1 for hemispheres run after concatenation. Both cannot be 1 at a time. </li>
+  <li>Set Kmeans = 1 or LSSC = 1. Both cannot be 1 at a time. </li>
   <li>Three images will be generated for each data set - Dice comparison, Within correlation comparison, Across correlation comparison</li>
 </ul>
 
@@ -117,6 +119,8 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
   <li>Set either of variables LSSC or KMEANS to 1. Do not set both equal to 1. We have to run the code separately for LSSC and Kmeans. </li>
   <li>Images will be saved in " saveimagesPath = '\.....\images_final_allData' ". </li>
   <li>dataID = 1/2/3/4 - for 4 data sets. </li>
+  <li>Set HEMISP_RUN_SEPARATELY=1 for hemispheres run separately. Set HEMISP_RUN_CONCATENATE=1 for hemispheres run after concatenation. Both cannot be 1 at a time. </li>
+  <li>Set Kmeans = 1 or LSSC = 1. Both cannot be 1 at a time. </li>
   <li>Code will run for specific subject-session-hemisphere. Modify the variables 'file_1', and 'file_2' to try for different subjects.</li>
   <li>Currently it is for Subject-9, as it has the best Dice.</li>
 </ul>
