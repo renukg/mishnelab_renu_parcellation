@@ -108,7 +108,7 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
   <li>dataID = 1/2/3/4 - for 4 data sets. </li>
   <li>Set HEMISP_RUN_SEPARATELY=1 for hemispheres run separately. Set HEMISP_RUN_CONCATENATE=1 for hemispheres run after concatenation. Both cannot be 1 at a time. </li>
   <li>Set Kmeans = 1 or LSSC = 1. Both cannot be 1 at a time. </li>
-  <li>Three images will be generated for each data set - Dice comparison, Within correlation comparison, Across correlation comparison</li>
+  <li>Three images will be generated for each data set - Dice comparison, Within correlation comparison, Across correlation comparison.</li>
 </ul>
 
 ## To plot parcel boundaries for comparing between sessions:
