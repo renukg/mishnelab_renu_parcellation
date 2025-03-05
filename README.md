@@ -43,7 +43,10 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
   </tr>
   <tr>
     <td>LSSC</td>
-    <td>run_LSSC_fmri_sessions_hemisphere.m</td>
+    <td>
+      For hemispheres, run separately: run_LSSC_fmri_sessions_hemisphere.m <br>
+      For hemispheres, data concatenated: run_LSSC_fmri_sessions_hemisp_concatenate.m
+    </td>
     <td> 
       <ul>
         <li>Update the directories. </li>
@@ -57,7 +60,10 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
   </tr>
   <tr>
     <td>Kmeans</td>
-    <td>run_Kmeans_fmri_sessions_hemisphere_v3.m</td>
+    <td>
+      For hemispheres, run separately: run_Kmeans_fmri_sessions_hemisphere_v3.m <br>
+      For hemispheres, data concatenated: run_Kmeans_fmri_sessions_hem_concatenate_v3.m
+    </td>
     <td>
       <ul>
         <li>Update the directories. </li>
@@ -71,9 +77,11 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
   </tr>
   <tr>
     <td>Allen</td>
-    <td>allenmaps_v1.m<br>
-    Allen atlas: lssc-frmi-eve\Allen_atlas\2D_calcium_atlas.nii</td>
     <td>
+      For hemispheres, run separately: allenmaps_v1.m <br>
+      For hemispheres, data concatenated: allenmaps_hemisp_concatenate_v1.m <br> 
+      Allen atlas: lssc-frmi-eve\Allen_atlas\2D_calcium_atlas.nii</td>
+    </td>
       <ul>
         <li>Update the data and Allen atlas (2D_calcium_atlas.nii) directories. </li>
         <li>dataID = 1/2/3/4 - for 4 data sets. </li>
