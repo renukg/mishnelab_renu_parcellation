@@ -80,8 +80,9 @@ Data and results: https://drive.google.com/drive/folders/1VuCujrljncQ8kfwf0e_B2W
     <td>
       For hemispheres, run separately: allenmaps_v1.m <br>
       For hemispheres, data concatenated: allenmaps_hemisp_concatenate_v1.m <br> 
-      Allen atlas: lssc-frmi-eve\Allen_atlas\2D_calcium_atlas.nii</td>
+      Allen atlas: lssc-frmi-eve\Allen_atlas\2D_calcium_atlas.nii
     </td>
+    <td>
       <ul>
         <li>Update the data and Allen atlas (2D_calcium_atlas.nii) directories. </li>
         <li>dataID = 1/2/3/4 - for 4 data sets. </li>
