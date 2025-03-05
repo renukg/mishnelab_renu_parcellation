@@ -2,30 +2,62 @@ clc;
 clear;
 close all;
 
-dataID = 4;
+% Compare Dice, within/across correlations across LSSC, Kmeans and Allen
+
+dataID = 1;
+HEMISP_RUN_SEPARATELY = 0;
+HEMISP_RUN_CONCATENATE = 1;
 
 if dataID == 1
-    lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_norm1_pca0_kNN16_sftune4_hemisphere_1_AllenOrdered';
-    kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_KNN25_hemisphere_replicas100_v3_minclstPix_15_new_AllenOrdered';
-    allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_AllenMaps_v1';
+    if HEMISP_RUN_SEPARATELY
+        lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_norm1_pca0_kNN16_sftune4_hemisphere_1_AllenOrdered';
+        kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_KNN25_hemisphere_replicas100_v3_minclstPix_15_new_AllenOrdered';
+        allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_AllenMaps_v1';
+    end
+    if HEMISP_RUN_CONCATENATE
+        lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_norm1_pca0_kNN16_sftune4_hem_concatenate_AllenOrdered';
+        kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_KNN27_hem_concatenate_replic100_minclstPix_15_AllenOrdered';
+        allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\test_run_AllenMaps_hem_concatenate_v1';
+    end
     dataString = 'Old';
 end
 if dataID == 2
-    lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_norm1_pca0_kNN16_sftune4_hem_AllenOrdered';
-    kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_KNN27_hem_replicas100_minclstPix_15_AllenOrdered';
-    allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_AllenMaps_v1';
+    if HEMISP_RUN_SEPARATELY
+        lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_norm1_pca0_kNN16_sftune4_hem_AllenOrdered';
+        kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_KNN27_hem_replicas100_minclstPix_15_AllenOrdered';
+        allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_AllenMaps_v1';
+    end
+    if HEMISP_RUN_CONCATENATE
+        lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_norm1_pca0_kNN16_sftune4_hem_concatenate_AllenOrdered';
+        kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_KNN27_hem_concatenate_replic100_minclstPix_15_AllenOrdered';
+        allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_1voxelmask_results\test_run_AllenMaps_hem_concatenate_v1';
+    end
     dataString = 'GSR_1voxelmask';
 end
 if dataID == 3
-    lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_norm1_pca0_kNN16_sftune4_hem_AllenOrdered';
-    kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_KNN27_hem_replicas100_minclstPix_15_AllenOrdered';
-    allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_AllenMaps_v1';
+    if HEMISP_RUN_SEPARATELY
+        lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_norm1_pca0_kNN16_sftune4_hem_AllenOrdered';
+        kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_KNN27_hem_replicas100_minclstPix_15_AllenOrdered';
+        allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_AllenMaps_v1';
+    end
+    if HEMISP_RUN_CONCATENATE
+        lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_norm1_pca0_kNN16_sftune4_hem_concatenate_AllenOrdered';
+        kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_KNN27_hem_concatenate_replic100_minclstPix_15_AllenOrdered';
+        allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\GSR_thickermask_results\test_run_AllenMaps_hem_concatenate_v1';
+    end
     dataString = 'GSR_thickermask';
 end
 if dataID == 4
-    lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_norm1_pca0_kNN16_sftune4_hem_AllenOrdered';
-    kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_KNN27_hem_replicas100_minclstPix_15_AllenOrdered';
-    allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_AllenMaps_v1';
+    if HEMISP_RUN_SEPARATELY
+        lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_norm1_pca0_kNN16_sftune4_hem_AllenOrdered';
+        kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_KNN27_hem_replicas100_minclstPix_15_AllenOrdered';
+        allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_AllenMaps_v1';
+    end
+    if HEMISP_RUN_CONCATENATE
+        lssc_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_norm1_pca0_kNN16_sftune4_hem_concatenate_AllenOrdered';
+        kmeans_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_KNN27_hem_concatenate_replic100_minclstPix_15_AllenOrdered';
+        allen_result_dir = 'D:\UCSD_Acads\ProfGal_Research\data_fMRI_GSR_processed\noGSR_thickermask_results\test_run_AllenMaps_hem_concatenate_v1';
+    end
     dataString = 'noGSR_thickermask';
 end
 
@@ -77,7 +109,12 @@ if p_dice < 0.05
 end
 hold off;
 
-saveas(gcf, fullfile(saveimagesPath,['Data_',dataString, '_', title_str,'.png']));
+if HEMISP_RUN_SEPARATELY
+    saveas(gcf, fullfile(saveimagesPath,['Data_',dataString, '_', title_str, '_hem_separate.png']));
+end
+if HEMISP_RUN_CONCATENATE
+    saveas(gcf, fullfile(saveimagesPath,['Data_',dataString, '_', title_str, '_hem_concatenate.png']));
+end
 
 %% Correlation
 matfilepath2 = fullfile(allen_result_dir, 'stats_mat_files');
@@ -161,5 +198,10 @@ for cc = 1:2
     end
 
     hold off;
-    saveas(gcf, fullfile(saveimagesPath,['Data_',dataString, '_', title_str,'.png']));
+    if HEMISP_RUN_SEPARATELY
+        saveas(gcf, fullfile(saveimagesPath,['Data_',dataString, '_', title_str,'_hem_separate.png']));
+    end
+    if HEMISP_RUN_CONCATENATE
+        saveas(gcf, fullfile(saveimagesPath,['Data_',dataString, '_', title_str, '_hem_concatenate.png']));
+    end
 end
